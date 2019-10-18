@@ -8,7 +8,7 @@
     <meta name="theme-color" content="#c9e0e04d">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,800&amp;display=swap&amp;subset=cyrillic" rel="stylesheet">
-    <link rel="stylesheet" href="./styles/main.css">
+    <link rel="stylesheet" href="./styles/main.min.css">
   </head>
   <body class="page-body">
     <div class="wrapper">
@@ -30,15 +30,31 @@
               </div>
               <div class="container page-header__menu">
                 <div class="menu-service page-header__menu-service">
-                  <ul class="list menu-service__list">
-                    <li class="menu-service__item"><a class="link menu-service__link menu-service__link--hair" href="javascript:void(0)">Hair</a>
-                    </li>
-                    <li class="menu-service__item"><a class="link menu-service__link menu-service__link--cosm" href="javascript:void(0)">Cosmetic</a>
-                    </li>
-                    <li class="menu-service__item"><a class="link menu-service__link menu-service__link--manic" href="javascript:void(0)">Manicure</a>
-                    </li>
-                    <li class="menu-service__item"><a class="link menu-service__link menu-service__link--massage" href="javascript:void(0)">Massage</a>
-                    </li>
+                  <ul class="list menu-service">
+                    <li class="menu-service__item"><a class="menu-service__link menu-service__link--hair" href="javascript:void(0)">hair
+                        <div class="social-img">
+                          <svg width="17px" height="20px">
+                            <use xlink:href="img/sprite.svg#hair"></use>
+                          </svg>
+                        </div></a></li>
+                    <li class="menu-service__item"><a class="menu-service__link menu-service__link--cosm" href="javascript:void(0)">cosmetic
+                        <div class="social-img">
+                          <svg width="20px" height="20px">
+                            <use xlink:href="img/sprite.svg#cosmetic"></use>
+                          </svg>
+                        </div></a></li>
+                    <li class="menu-service__item"><a class="menu-service__link menu-service__link--manic" href="javascript:void(0)">manicure
+                        <div class="social-img">
+                          <svg width="12px" height="22px">
+                            <use xlink:href="img/sprite.svg#manicure"></use>
+                          </svg>
+                        </div></a></li>
+                    <li class="menu-service__item"><a class="menu-service__link menu-service__link--massage" href="javascript:void(0)">massage
+                        <div class="social-img">
+                          <svg width="18px" height="20px">
+                            <use xlink:href="img/sprite.svg#massage"></use>
+                          </svg>
+                        </div></a></li>
                   </ul>
                 </div>
                 <div class="page-header__btn-block"><a class="link link-btn" href="javascript:void(0)">Катталог мастеров</a><a class="link link-btn link-btn--white-style" href="javascript:void(0)">Стать специалистом</a>
@@ -135,14 +151,26 @@
                     <li class="slider__service-item">
                       <div class="slider__service-img">
                         <picture>
-                          <source type="image/webp" media="(max-width:400px)" srcset="img/man-hair-mobile.webp"/>
-                          <source media="(max-width:420px)" srcset="img/man-hair-mobile.jpg"/>
-                          <source type="image/webp" media="(max-width:900px)" srcset="img/man-hair-tablet.webp"/>
-                          <source media="(max-width:900px)" srcset="img/man-hair-tablet.jpg"/>
-                          <source type="image/webp" srcset="img/man-hair-desktop.webp"/><img src="img/man-hair-desktop.jpg" alt="Стрижка"/>
+                          <source type="image/webp" media="(max-width:400px)" srcset="img/w-hair-mobile.webp"/>
+                          <source media="(max-width:420px)" srcset="img/w-hair-mobile.jpg"/>
+                          <source type="image/webp" media="(max-width:900px)" srcset="img/w-hair-tablet.webp"/>
+                          <source media="(max-width:900px)" srcset="img/w-hair-tablet.jpg"/>
+                          <source type="image/webp" srcset="img/w-hair-desktop.webp"/><img src="img/w-hair-desktop.jpg" alt="Стрижка"/>
                         </picture>
                       </div>
-                      <div class="slider__service-text"><span class="slide-discr">Мужская стрижка</span></div>
+                      <div class="slider__service-text"><span class="slide-discr">Женская стрижка</span></div>
+                    </li>
+                    <li class="slider__service-item">
+                      <div class="slider__service-img">
+                        <picture>
+                          <source type="image/webp" media="(max-width:400px)" srcset="img/eyebrows-mobile.webp"/>
+                          <source media="(max-width:420px)" srcset="img/eyebrows-mobile.jpg"/>
+                          <source type="image/webp" media="(max-width:900px)" srcset="img/eyebrows-tablet.webp"/>
+                          <source media="(max-width:900px)" srcset="img/eyebrows-tablet.jpg"/>
+                          <source type="image/webp" srcset="img/eyebrows-desktop.webp"/><img src="img/eyebrows-desktop.jpg" alt="Коррекция бровей"/>
+                        </picture>
+                      </div>
+                      <div class="slider__service-text"><span class="slide-discr">Коррекция бровей</span></div>
                     </li>
                     <li class="slider__service-item">
                       <div class="slider__service-img">
@@ -159,42 +187,26 @@
                     <li class="slider__service-item">
                       <div class="slider__service-img">
                         <picture>
-                          <source type="image/webp" media="(max-width:400px)" srcset="img/man-hair-mobile.webp"/>
-                          <source media="(max-width:420px)" srcset="img/man-hair-mobile.jpg"/>
-                          <source type="image/webp" media="(max-width:900px)" srcset="img/man-hair-tablet.webp"/>
-                          <source media="(max-width:900px)" srcset="img/man-hair-tablet.jpg"/>
-                          <source type="image/webp" srcset="img/man-hair-desktop.webp"/><img src="img/man-hair-desktop.jpg" alt="Стрижка"/>
+                          <source type="image/webp" media="(max-width:400px)" srcset="img/w-hair-mobile.webp"/>
+                          <source media="(max-width:420px)" srcset="img/w-hair-mobile.jpg"/>
+                          <source type="image/webp" media="(max-width:900px)" srcset="img/w-hair-tablet.webp"/>
+                          <source media="(max-width:900px)" srcset="img/w-hair-tablet.jpg"/>
+                          <source type="image/webp" srcset="img/w-hair-desktop.webp"/><img src="img/w-hair-desktop.jpg" alt="Стрижка"/>
                         </picture>
                       </div>
-                      <div class="slider__service-text"><span class="slide-discr">Мужская стрижка</span></div>
-                    </li>
-                    <li class="slider__service-item">
-                      <div class="slider__service-img">
-                        <picture>
-                          <source type="image/webp" media="(max-width:400px)" srcset="img/man-hair-mobile.webp"/>
-                          <source media="(max-width:420px)" srcset="img/man-hair-mobile.jpg"/>
-                          <source type="image/webp" media="(max-width:900px)" srcset="img/man-hair-tablet.webp"/>
-                          <source media="(max-width:900px)" srcset="img/man-hair-tablet.jpg"/>
-                          <source type="image/webp" srcset="img/man-hair-desktop.webp"/><img src="img/man-hair-desktop.jpg" alt="Стрижка"/>
-                        </picture>
-                      </div>
-                      <div class="slider__service-text"><span class="slide-discr">Мужская стрижка</span></div>
+                      <div class="slider__service-text"><span class="slide-discr">Женская стрижка</span></div>
                     </li>
                   </ul>
                   <div class="slider-controls">
-                    <button class="btn slider__btn-prev" type="button">
-                      <div class="slider__btn-icon">
-                        <svg width="10px" height="20px" id="service-arrow-prw">
-                          <use xlink:href="img/sprite.svg#arrow-prw"></use>
-                        </svg>
-                      </div>
+                    <button class="btn btn-slider slider__btn-prev" type="button">
+                      <svg width="10px" height="20px">
+                        <use xlink:href="img/sprite.svg#arrow-prw"></use>
+                      </svg>
                     </button>
-                    <button class="btn slider__btn-next" type="button">
-                      <div class="slider__btn-icon">
-                        <svg width="10px" height="20px" id="service-arrow-nxt">
-                          <use xlink:href="img/sprite.svg#arrow-nxt"></use>
-                        </svg>
-                      </div>
+                    <button class="btn btn-slider slider__btn-next" type="button">
+                      <svg width="10px" height="20px">
+                        <use xlink:href="img/sprite.svg#arrow-nxt"></use>
+                      </svg>
                     </button>
                   </div>
                   <div class="slider-pagination"><span class="slider-pagination__item slider-pagination__item--active" tabindex="0"></span><span class="slider-pagination__item" tabindex="0"></span><span class="slider-pagination__item" tabindex="0"></span><span class="slider-pagination__item" tabindex="0"></span><span class="slider-pagination__item" tabindex="0"></span></div>
@@ -302,26 +314,22 @@
                   </li>
                 </ul>
                 <div class="slider-controls">
-                  <button class="btn slider__btn-prev" type="button">
-                    <div class="slider__btn-icon">
-                      <svg width="10px" height="20px" id="service-arrow-prw">
-                        <use xlink:href="img/sprite.svg#arrow-prw"></use>
-                      </svg>
-                    </div>
+                  <button class="btn btn-slider slider__btn-prev" type="button">
+                    <svg width="10px" height="20px">
+                      <use xlink:href="img/sprite.svg#arrow-prw"></use>
+                    </svg>
                   </button>
-                  <button class="btn slider__btn-next" type="button">
-                    <div class="slider__btn-icon">
-                      <svg width="10px" height="20px" id="service-arrow-nxt">
-                        <use xlink:href="img/sprite.svg#arrow-nxt"></use>
-                      </svg>
-                    </div>
+                  <button class="btn btn-slider slider__btn-next" type="button">
+                    <svg width="10px" height="20px">
+                      <use xlink:href="img/sprite.svg#arrow-nxt"></use>
+                    </svg>
                   </button>
                 </div>
                 <div class="slider-pagination"><span class="slider-pagination__item slider-pagination__item--active" tabindex="0"></span><span class="slider-pagination__item" tabindex="0"></span><span class="slider-pagination__item" tabindex="0"></span><span class="slider-pagination__item" tabindex="0"></span><span class="slider-pagination__item" tabindex="0"></span></div>
               </div>
             </div>
           </div>
-          <div class="index-comments">
+          <section class="index-comments">
             <div class="layout-position">
               <h2 class="title comments__title">Впечатления наших гостей</h2>
               <div class="comments__slider">
@@ -381,91 +389,159 @@
                 </div>
               </div>
               <div class="slider-controls">
-                <button class="btn slider__btn-prev" type="button">
-                  <div class="slider__btn-icon">
-                    <svg width="10px" height="20px" id="service-arrow-prw">
-                      <use xlink:href="img/sprite.svg#arrow-prw"></use>
-                    </svg>
-                  </div>
+                <button class="btn btn-slider slider__btn-prev" type="button">
+                  <svg width="10px" height="20px">
+                    <use xlink:href="img/sprite.svg#arrow-prw"></use>
+                  </svg>
                 </button>
-                <button class="btn slider__btn-next" type="button">
-                  <div class="slider__btn-icon">
-                    <svg width="10px" height="20px" id="service-arrow-nxt">
-                      <use xlink:href="img/sprite.svg#arrow-nxt"></use>
-                    </svg>
-                  </div>
+                <button class="btn btn-slider slider__btn-next" type="button">
+                  <svg width="10px" height="20px">
+                    <use xlink:href="img/sprite.svg#arrow-nxt"></use>
+                  </svg>
                 </button>
               </div>
               <div class="slider-pagination"><span class="slider-pagination__item slider-pagination__item--active" tabindex="0"></span><span class="slider-pagination__item" tabindex="0"></span><span class="slider-pagination__item" tabindex="0"></span><span class="slider-pagination__item" tabindex="0"></span><span class="slider-pagination__item" tabindex="0"></span></div>
             </div>
-          </div>
-          <div class="articles">
+          </section>
+          <section class="articles">
             <div class="layout-position">
               <div class="articles__top-line">
                 <ul class="articles__list">
-                  <li class="articles__list-item">
-                    <div class="article">
-                      <div class="article__title">
-                        <div class="article__title-img">
-                          <svg width="48px" height="48px" id="nov">
-                            <use xlink:href="img/sprite.svg#novelty"></use>
-                          </svg>
+                  <li class="articles__list-item"><a class="link articles__list-link" href="javascript:void(0)">
+                      <article class="article">
+                        <div class="article__title">
+                          <div class="article__title-img">
+                            <svg width="48px" height="48px">
+                              <use xlink:href="img/sprite.svg#novelty"></use>
+                            </svg>
+                          </div>
+                          <div class="article__title-text">
+                            <h3 class="subtitle">Новинки</h3>
+                          </div>
                         </div>
-                        <div class="article__title-text">
-                          <h3 class="subtitle">Новинки</h3>
+                        <div class="article__text">
+                          <p class="article__text-par">Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев.</p>
                         </div>
-                      </div>
-                      <div class="article__text">
-                        <p class="article__text-par">Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев.</p>
-                      </div>
-                    </div>
-                  </li>
-                  <li class="articles__list-item">
-                    <div class="article">
-                      <div class="article__title">
-                        <div class="article__title-img">
-                          <svg width="48px" height="48px" id="news">
-                            <use xlink:href="img/sprite.svg#news"></use>
-                          </svg>
+                      </article></a></li>
+                  <li class="articles__list-item"><a class="link articles__list-link" href="javascript:void(0)">
+                      <article class="article">
+                        <div class="article__title">
+                          <div class="article__title-img">
+                            <svg width="48px" height="48px">
+                              <use xlink:href="img/sprite.svg#news"></use>
+                            </svg>
+                          </div>
+                          <div class="article__title-text">
+                            <h3 class="subtitle">Новости</h3>
+                          </div>
                         </div>
-                        <div class="article__title-text">
-                          <h3 class="subtitle">Новости</h3>
+                        <div class="article__text">
+                          <p class="article__text-par">Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев.</p>
                         </div>
-                      </div>
-                      <div class="article__text">
-                        <p class="article__text-par">Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев.</p>
-                      </div>
-                    </div>
-                  </li>
-                  <li class="articles__list-item">
-                    <div class="article">
-                      <div class="article__title">
-                        <div class="article__title-img">
-                          <svg width="48px" height="48px" id="art">
-                            <use xlink:href="img/sprite.svg#articles"></use>
-                          </svg>
+                      </article></a></li>
+                  <li class="articles__list-item"><a class="link articles__list-link" href="javascript:void(0)">
+                      <article class="article">
+                        <div class="article__title">
+                          <div class="article__title-img">
+                            <svg width="48px" height="48px">
+                              <use xlink:href="img/sprite.svg#articles"></use>
+                            </svg>
+                          </div>
+                          <div class="article__title-text">
+                            <h3 class="subtitle">Статьи</h3>
+                          </div>
                         </div>
-                        <div class="article__title-text">
-                          <h3 class="subtitle">Статьи</h3>
+                        <div class="article__text">
+                          <p class="article__text-par">Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев.</p>
                         </div>
-                      </div>
-                      <div class="article__text">
-                        <p class="article__text-par">Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев.</p>
-                      </div>
-                    </div>
-                  </li>
+                      </article></a></li>
                 </ul>
               </div>
               <div class="articles__bottom-line">
                 <p>Задача организации, в особенности же рамки и место обучения кадров играет важную роль в формировании существенных финансовых и административных условий. Значимость этих проблем настолько очевидна, что постоянное информационно-пропагандистское обеспечение нашей деятельности представляет собой интересный эксперимент проверки системы обучения кадров, соответствует насущным потребностям. Задача организации, в особенности же дальнейшее развитие различных форм деятельности обеспечивает широкому кругу (специалистов) участие в формировании позиций, занимаемых участниками в отношении поставленных задач. Значимость этих проблем настолько очевидна, что начало повседневной работы по формированию позиции в значительной степени обуславливает создание дальнейших направлений развития. Значимость этих проблем настолько очевидна, что консультация с широким активом требуют от нас анализа соответствующий условий активизации.</p>
-                <p>Задача организации, в особенности же реализация намеченных плановых заданий в значительной степени обуславливает создание соответствующий условий активизации. Значимость этих проблем настолько очевидна, что консультация с широким активом влечет за собой процесс внедрения и модернизации дальнейших направлений развития. Таким образом консультация с широким активом способствует подготовки и реализации новых предложений.</p>
               </div>
             </div>
-          </div>
+          </section>
         </main>
       </div>
+      <footer class="page-footer">
+        <div class="layout-position">
+          <div class="footer-links">
+            <div class="footer-block-links">
+              <div class="column">
+                <ul class="footer-list">
+                  <li class="footer-list__item"><a class="link footer-list__link" href="javascript:void(0)">Подключиться как салон</a>
+                  </li>
+                  <li class="footer-list__item"><a class="link footer-list__link" href="javascript:void(0)">Подключиться как мастер</a>
+                  </li>
+                  <li class="footer-list__item"><a class="link footer-list__link" href="javascript:void(0)">Инвесторам</a>
+                  </li>
+                  <li class="footer-list__item"><a class="link footer-list__link" href="javascript:void(0)">Франчайзинг</a>
+                  </li>
+                  <li class="footer-list__item"><a class="link footer-list__link" href="javascript:void(0)">Пресс-центр</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="column">
+                <ul class="footer-list">
+                  <li class="footer-list__item"><a class="link footer-list__link" href="javascript:void(0)">Все салоны</a>
+                  </li>
+                  <li class="footer-list__item"><a class="link footer-list__link" href="javascript:void(0)">Все мастера</a>
+                  </li>
+                  <li class="footer-list__item"><a class="link footer-list__link" href="javascript:void(0)">Специальные предложения</a>
+                  </li>
+                  <li class="footer-list__item"><a class="link footer-list__link" href="javascript:void(0)">Магазин подарков</a>
+                  </li>
+                  <li class="footer-list__item"><a class="link footer-list__link" href="javascript:void(0)">Пользовательское соглашение</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="footer-links__social">
+              <ul class="list social-list">
+                <li class="social-list__item"><a class="social-list__link social-list__link--vk" href="javascript:void(0)">Вконтакте
+                    <div class="social-img">
+                      <svg width="24px" height="14px">
+                        <use xlink:href="img/sprite.svg#vk"></use>
+                      </svg>
+                    </div></a></li>
+                <li class="social-list__item"><a class="social-list__link social-list__link--fb" href="javascript:void(0)">facebook
+                    <div class="social-img">
+                      <svg width="12px" height="24px">
+                        <use xlink:href="img/sprite.svg#fb"></use>
+                      </svg>
+                    </div></a></li>
+                <li class="social-list__item"><a class="social-list__link social-list__link--ok" href="javascript:void(0)">Однокласники
+                    <div class="social-img">
+                      <svg width="14px" height="24px">
+                        <use xlink:href="img/sprite.svg#odkl"></use>
+                      </svg>
+                    </div></a></li>
+                <li class="social-list__item"><a class="social-list__link social-list__link--inst" href="javascript:void(0)">instagram
+                    <div class="social-img">
+                      <svg width="24px" height="24px">
+                        <use xlink:href="img/sprite.svg#inst"></use>
+                      </svg>
+                    </div></a></li>
+                <li class="social-list__item"><a class="social-list__link social-list__link--ytube" href="javascript:void(0)">youtube
+                    <div class="social-img">
+                      <svg width="24px" height="18px">
+                        <use xlink:href="img/sprite.svg#youtb"></use>
+                      </svg>
+                    </div></a></li>
+                <li class="social-list__item"><a class="social-list__link social-list__link--tg" href="javascript:void(0)">Telegram
+                    <div class="social-img">
+                      <svg width="24px" height="20px">
+                        <use xlink:href="img/sprite.svg#tg"></use>
+                      </svg>
+                    </div></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </footer>
     </div>
     <script src="js/vendor.js"></script>
-    <script src="js/main.js"></script>
+    <script src="js/main.min.js"></script>
   </body>
 </html>
